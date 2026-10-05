@@ -89,7 +89,7 @@ function App() {
       {/* Main Chat Interface */}
       <div className="card chat-area">
         <h2 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: 0 }}>
-          <FileText size={24} /> Budgeted AI Agent (5-Call Max)
+          <FileText size={24} /> Budgeted Agent
         </h2>
         
         {!docId ? (
