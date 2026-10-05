@@ -143,11 +143,7 @@ function App() {
                 <span style={{ color: '#94a3b8' }}>Args: {JSON.stringify(log.args)}</span>
               </div>
             );
-            if (log.type === 'tool_result') return (
-              <div key={idx} className="log-entry" style={{ color: '#34d399' }}>
-                ✓ RESULT: {log.result}
-              </div>
-            );
+            if (log.type === 'tool_result') return null;
             if (log.type === 'final_answer' || log.type === 'budget_exhausted') return (
               <div key={idx} className="log-entry" style={{ color: '#38bdf8' }}>
                 ★ COMPLETE: {log.type === 'budget_exhausted' ? 'Budget Failed' : 'Success'}
